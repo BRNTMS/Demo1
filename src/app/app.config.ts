@@ -2,6 +2,7 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChang
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
+import { Lista } from './lista/lista';
 
 export const appConfig: ApplicationConfig = {
   providers: [
