@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ListaService } from '../lista';
-import { map } from 'rxjs';
+import { ListaService } from '../lista.service';
 import { iPersona } from '../persona';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-lista',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './lista.html',
   styleUrl: './lista.css'
 })

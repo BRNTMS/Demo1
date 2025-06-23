@@ -14,4 +14,8 @@ export class ListaService {
   getLista(): Observable<iPersona[]>{
     return this.http.get<iPersona[]>("http://localhost:8080/api/persone");
   }
+
+  salvaPersona(persona: iPersona): Observable<iPersona> {
+    return this.http.post<iPersona>("http://localhost:8080/api/persona", persona);
+  }
 }

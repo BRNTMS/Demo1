@@ -1,0 +1,7 @@
+<form [formGroup]="personaForm" (ngSubmit)="onSubmit()">
+  <label for="first-name">Nome: </label>
+  <input id="first-name" type="text" formControlName="nome" />
+  <label for="last-name">Cognome: </label>
+  <input id="last-name" type="text" formControlName="cognome" />
+  <button type="submit">Crea persona</button>
+</form>

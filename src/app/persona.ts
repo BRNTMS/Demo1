@@ -1,5 +1,5 @@
 export interface iPersona{
-    id: number;
+    id?: number | null;
     nome?: String | null;
     cognome?: String | null;
 }

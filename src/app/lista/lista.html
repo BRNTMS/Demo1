@@ -1,6 +1,9 @@
-<p>lista works!</p>
+<h2>Lista Persone</h2>
 <ul>
     @for (item of lista; track item){
         <li>{{ item.nome }} {{ item.cognome }}</li>
     }
 </ul>
+<div>
+  <a [routerLink]="['/persone','new']">Aggiungi persona</a>
+</div>
