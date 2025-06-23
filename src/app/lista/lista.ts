@@ -11,16 +11,14 @@ import { iPersona } from '../persona';
   styleUrl: './lista.css'
 })
 export class Lista implements OnInit{
+
   lista: iPersona[] = [];
+
   constructor(public service: ListaService){
 
   }
 
   ngOnInit(): void {
-      this.service.getLista().subscribe({
-        next:(res: iPersona[]) => {
-          this.lista = res;
-        }
-      });
+      this.service.getLista().subscribe((res: iPersona[]) => this.lista = res);
   }
 }

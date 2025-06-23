@@ -12,6 +12,6 @@ export class ListaService {
   constructor() { }
 
   getLista(): Observable<iPersona[]>{
-    return this.http.get<iPersona[]>("http://localhost:8080/api/persona");
+    return this.http.get<iPersona[]>("http://localhost:8080/api/persone");
   }
 }
